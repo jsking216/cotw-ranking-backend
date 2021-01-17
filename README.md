@@ -1,3 +1,3 @@
-# Strapi application
+# COTW Ranking Backend
 
-A quick description of your strapi application
+A strapi backend app for hosting the reviews and episodes used for ranking the COTW podcast.
