@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/podcast-episode-reviews",
+      "handler": "podcast-episode-review.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/podcast-episode-reviews/count",
+      "handler": "podcast-episode-review.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/podcast-episode-reviews/:id",
+      "handler": "podcast-episode-review.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/podcast-episode-reviews",
+      "handler": "podcast-episode-review.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/podcast-episode-reviews/:id",
+      "handler": "podcast-episode-review.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/podcast-episode-reviews/:id",
+      "handler": "podcast-episode-review.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

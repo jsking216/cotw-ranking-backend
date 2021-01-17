@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "podcast_episodes",
+  "info": {
+    "name": "PodcastEpisode",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "PodcastEpisodeName": {
+      "type": "string"
+    },
+    "podcast_episode_review": {
+      "via": "podcast_episode",
+      "model": "podcast-episode-review"
+    },
+    "podcast": {
+      "via": "podcast_episodes",
+      "model": "podcast"
+    }
+  }
+}

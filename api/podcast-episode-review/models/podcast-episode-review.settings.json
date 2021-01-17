@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "podcast_episode_reviews",
+  "info": {
+    "name": "PodcastEpisodeReview",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "PodcastEpisodeReviewName": {
+      "type": "string"
+    },
+    "OverallReviewRating": {
+      "type": "decimal"
+    },
+    "BeginningReviewRating": {
+      "type": "decimal"
+    },
+    "MiddleReviewRating": {
+      "type": "decimal"
+    },
+    "EndingReviewRating": {
+      "type": "decimal"
+    },
+    "HypeReviewRating": {
+      "type": "decimal"
+    },
+    "VarietyReviewRating": {
+      "type": "decimal"
+    },
+    "FunReviewRating": {
+      "type": "decimal"
+    },
+    "podcast_episode": {
+      "model": "podcast-episode",
+      "via": "podcast_episode_review"
+    },
+    "PodcastEpisodeReviewDescription": {
+      "type": "text"
+    }
+  }
+}

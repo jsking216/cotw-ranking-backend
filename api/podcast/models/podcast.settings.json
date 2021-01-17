@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "podcasts",
+  "info": {
+    "name": "Podcast",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "PodcastName": {
+      "type": "string"
+    },
+    "PodcastDescription": {
+      "type": "text"
+    },
+    "PodcastUrl": {
+      "type": "string"
+    },
+    "podcast_episodes": {
+      "collection": "podcast-episode",
+      "via": "podcast"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
