@@ -34,6 +34,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "podcast_episode_reviews": {
+      "via": "podcast",
+      "collection": "podcast-episode-review"
     }
   }
 }

@@ -41,6 +41,10 @@
     },
     "PodcastEpisodeReviewDescription": {
       "type": "text"
+    },
+    "podcast": {
+      "model": "podcast",
+      "via": "podcast_episode_reviews"
     }
   }
 }
